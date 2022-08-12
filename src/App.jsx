@@ -1,17 +1,20 @@
 import React from "react"
 
+import Aleatorio from './components/basicos/Aleatorio';
+import Primeiro from './components/basicos/Primeiro'
+import ComParametro from './components/basicos/ComParametro'
+import Fragmento from './components/basicos/Fragmento'
 
-
-export default function App(props) {
-    return (
-        <div id='app'>
+export default () => (
+    <div id="app">
+        <h1>Fundamentos React (Arrow _)</h1>
+        <Aleatorio min={1} max={100} />
         <Fragmento/>
-        
-        <ComParametro 
+        <ComParametro
             titulo="Nota do Aluno"
-            aluno="Lucas"  
-            nota={9.7}/>
+            aluno="Lucas Marcelo"  
+            nota={9.7}
+        />
         <Primeiro></Primeiro>
-    </div>,
-    )
-}
+    </div>
+);
